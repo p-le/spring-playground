@@ -6,7 +6,8 @@ public class AdmageWebInitializer extends AbstractAnnotationConfigDispatcherServ
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return new Class<?>[]{ RootConfig.class };
+//		return new Class<?>[]{ RootConfig.class };
+		return null;
 	}
 
 	@Override

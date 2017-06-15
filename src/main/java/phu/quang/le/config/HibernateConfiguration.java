@@ -13,7 +13,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
-import org.springframework.orm.hibernate4.HibernateTransactionManager;
+import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
@@ -57,7 +57,6 @@ public class HibernateConfiguration {
 	}
 	
 	
-	@Bean
 	private Properties hibernateProperties() {
 		Properties properties = new Properties();
     properties.put("hibernate.dialect", environment.getRequiredProperty("hibernate.dialect"));
